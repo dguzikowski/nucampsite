@@ -15,7 +15,8 @@ header h2 {
 }
 
 h2 {
-    color: #3046c5
+    font-family: "Lobster", cursive;
+    color: #3046c5;
 }
 
 footer {
