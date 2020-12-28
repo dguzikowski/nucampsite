@@ -1,62 +1,49 @@
 body {
-    font-family: "Open Sans", sans-serif;
-}
+  font-family: "Open Sans", sans-serif; }
 
 h1, h2, h3 {
-    font-family: "Lobster", cursive;
-}
+  font-family: "Lobster", cursive; }
 
 h1 {
-    color: #ffffff;
-}
+  color: #ffffff; }
 
 header h2 {
-    color: #d4cee7d8;
-}
+  color: #CEC8FF; }
 
 h2 {
-    font-family: "Lobster", cursive;
-    color: #3046c5;
-}
+  font-family: "Lobster", cursive;
+  color: #3046C5; }
 
 footer {
-    background-image: linear-gradient(#cec8ff, #ffffff);
-    padding: 25px 0;
-}
+  background-image: linear-gradient(#cec8ff, #ffffff);
+  padding: 25px 0; }
 
 .jumbotron {
-    padding: 30px;
-    margin: 0;
-    background-image: linear-gradient(to right, #5637dd, #3046c5, #60106B);
-    color: #ffffff;
-}
+  padding: 30px;
+  margin: 0;
+  background-image: linear-gradient(to right, #5637dd, #3046C5, #60106b);
+  color: white; }
 
 .row-content {
-    padding: 10px 0px;
-    border-bottom: 1px;
-    min-height: 10px;
-}
+  padding: 10px 0px;
+  border-bottom: 1px;
+  min-height: 10px; }
 
 .navbar {
-    background-color: #901cad;
-}
+  background-color: #901CAD; }
 
 .site-footer {
-    background-image: linear-gradient(#cec8ff, white);
-    padding: 20px 0px;
-}
+  background-image: linear-gradient(#CEC8FF, white);
+  padding: 20px 0px; }
 
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-}
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .carousel {
-    border: solid #5637DD;
-}
+  border: solid #5637dd; }
 
 #carouselButton {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-}
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100; }
