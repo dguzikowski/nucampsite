@@ -1,28 +1,25 @@
-node_modules/jquery/dist/jquery.slim.min.js
-
-        $(function() {
-            $(".carousel").carousel( { interval: 2000 } );
-            $("#carouselButton").click(function(){
-                if ($("#carouselButton").children("i").hasClass("fa-pause")) {
-                    $(".carousel").carousel("pause");
-                    $("#carouselButton").children("i").removeClass("fa-pause");
-                    $("#carouselButton").children("i").addClass("fa-play");
-                } else {
-                    $(".carousel").carousel("cycle");
-                    $("#carouselButton").children("i").removeClass("fa-play");
-                    $("#carouselButton").children("i").addClass("fa-pause"); 
-                }
-            });
-        });
-
-
 $(function() {
-    $("#reserveButton").click(function() {
-        $("#reserveModal").show();
+    // carousel functionality 
+    $(".carousel").carousel( { interval: 2000 } );
+    $("#carouselButton").on('click',() => {
+        if ($("#carouselButton").children("i").hasClass("fa-pause")) {
+            $(".carousel").carousel("pause");
+            $("#carouselButton").children("i").removeClass("fa-pause");
+            $("#carouselButton").children("i").addClass("fa-play");
+        } else {
+            $(".carousel").carousel("cycle");
+            $("#carouselButton").children("i").removeClass("fa-play");
+            $("#carouselButton").children("i").addClass("fa-pause"); 
+        }
     });
 
+    // activating reserve modal
+    $('#reserveButton').on('click',() => {
+        $('#reserveModal').modal('show');
+    });
 
-    $("#loginButton").click(function() {
-        $("#loginModal").show();
+    // activating login modal
+    $('#loginButton').on('click',() => {
+        $('#loginModal').modal('show');
     });
 });

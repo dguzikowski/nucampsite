@@ -1,3 +1,4 @@
+$color-teal: #17A2B8;
 $color-primary: #3046C5;
 $color-secondary: #5637dd;
 $color-pale: #CEC8FF;
@@ -7,7 +8,6 @@ $color-black-transparent: rgba(0, 0, 0, 0.5);
 
 $body-font: "Open Sans", sans-serif;
 $header-font: "Lobster", cursive;
-
 
 body {
     font-family: $body-font;
@@ -21,15 +21,14 @@ h1 {
     color: #ffffff;
 }
 
+h2 {
+    color: $color-primary;
+}
+
 header {
     h2 {
     color: $color-pale;
     }
-}
-
-h2 {
-    font-family: "Lobster", cursive;
-    color: $color-primary;
 }
 
 footer {
@@ -39,9 +38,9 @@ footer {
 
 .jumbotron {
     padding: 30px;
-    margin: 0;
     background-image: linear-gradient(to right, $color-secondary, $color-primary, $color-dark);
     color: white;
+    margin: 0;
 }
 
 .row-content {
@@ -55,7 +54,7 @@ footer {
 }
 
 .site-footer {
-    background-image: linear-gradient($color-pale, white);
+    background-image: linear-gradient(to bottom, $color-pale, white);
     padding: 20px 0px;
 }
 
@@ -72,4 +71,23 @@ footer {
     right: 0;
     bottom: 0;
     z-index: 100;
+}
+
+a, a:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+
+#reserveModal {
+    .modal-header{
+        background-color: $color-teal;
+        color: white;
+    }
+}
+
+#loginModal {
+    .modal-header{
+        background-color: $color-mid;
+        color: white;
+    }
 }
